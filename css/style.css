@@ -82,9 +82,20 @@ body {
     width: 100%;
   }
   .flexotro {
-    width: 50%;
+    width: 30%;
     height: 300px;
     border: 1px solid white;
+  }
+
+  .barraIzq{
+    
+    width: 69%;
+    height: 300px;
+    border: 1px solid white;
+
+  }
+  .barraDer{
+
   }
   
 
