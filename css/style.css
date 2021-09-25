@@ -107,7 +107,7 @@ body {
     justify-content:center;
     
     width: 30%;
-    height: 300px;
+    height: 500px;
     border: 1px solid white;
 
   }
@@ -118,20 +118,39 @@ body {
     justify-content:center;
 
     width: 70%;
-    height: 300px;
+    height: 500px;
     border: 1px solid white;
     
   }
-  #Bimagen {
+  #DerImagen {
     height: 100%;;
     width: 50%;;
     background-color: yellow;
   }
-  #Bdescripcion{
+  #DerDescripcion{
     height: 100%;
     width: 50%;;
     background-color: blue;
   }
+
+  #IzqTitulo{
+    height: 10%;
+      width: 100%;
+      background-color: cyan;
+    
+  }
+#IzqDescripcion{
+  height: 55%;
+    width: 100%;
+    background-color: pink;
+
+}
+#IzqImagen{
+  height: 35%;
+    width: 100%;;
+    background-color: brown;
+  
+}
 
 
   
