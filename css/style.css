@@ -10,6 +10,9 @@ body {
     font-family: Roboto, Arial, sans-serif;
 }
 
+
+
+
 .navbar {
     font-size: 18px;
     background-image: linear-gradient(260deg, #0c1f15 0%, #000000 100%);
@@ -81,23 +84,54 @@ body {
   .flexboxfull {
     width: 100%;
   }
+
+  /* Serie  */
+
+#trailer{
+  width: 100%;
+  height: 720px;
+  border: 1px solid white;
+
+}
+
   .flexotro {
-    width: 30%;
+    width: 50%;
     height: 300px;
     border: 1px solid white;
   }
 
   .barraIzq{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:left;
+    justify-content:center;
     
-    width: 69%;
+    width: 30%;
     height: 300px;
     border: 1px solid white;
 
   }
   .barraDer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:right;
+    justify-content:center;
 
+    width: 70%;
+    height: 300px;
+    border: 1px solid white;
+    
   }
-  
+  #Bimagen {
+    height: 100%;;
+    width: 50%;;
+    background-color: yellow;
+  }
+  #Bdescripcion{
+    height: 100%;
+    width: 50%;;
+    background-color: blue;
+  }
 
 
   
