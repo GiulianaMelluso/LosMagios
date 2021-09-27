@@ -14,6 +14,9 @@ body {
     background-color: var(--blackish4);
 }
 
+
+
+
 .navbar {
     font-size: 18px;
     background-image: linear-gradient(260deg, #0c1f15 0%, #000000 100%);
@@ -83,9 +86,30 @@ body {
     color: white;
   }
   .flexboxfull {
+    display: flex;
     width: 100%;
    
   }
+
+  /* Serie  */
+
+#CajaCartelera{
+  background-color: maroon;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+}
+
+#trailer{
+  width: 100%;
+  height: 720px;
+  border: 1px solid white;
+
+}
+
   .flexotro {
     width: 50%;
     height: 300px;
@@ -128,6 +152,74 @@ body {
     color: gray;
     font-size:13px;
   }
+
+  .barraIzq{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:left;
+    justify-content:center;
+    
+    width: 30%;
+    height: 500px;
+    border: 1px solid white;
+
+  }
+  .barraDer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:right;
+    justify-content:center;
+
+    width: 70%;
+    height: 500px;
+    border: 1px solid white;
+    
+  }
+  #DerImagen {
+    height: 100%;;
+    width: 50%;;
+    background-color: yellow;
+  }
+  #DerDescripcion{
+    height: 100%;
+    width: 50%;;
+    background-color: blue;
+  }
+
+  #IzqTitulo{
+    height: 10%;
+      width: 100%;
+      background-color: cyan;
+    
+  }
+#IzqDescripcion{
+  height: 55%;
+    width: 100%;
+    background-color: pink;
+
+}
+#IzqImagen{
+  height: 35%;
+    width: 100%;;
+    background-color: brown;
+  
+}
+.Cartelera{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color:red;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 135px;
+  width: 100px;
+}
+.Cartelera:hover{
+  -webkit-transform:scale(1.4) ;
+      transform: scale(1.4) ;
+      -webkit-transition: all 0.8s ease-in-out;
+      transition: all 0.4s ease-in-out;
+}
 
 
   
