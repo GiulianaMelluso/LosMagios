@@ -6,25 +6,70 @@
     margin: 0;
 }
 body {
-    background: #040805;
     font-family: Roboto, Arial, sans-serif;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-color: var(--blackish4);
 }
 
-button{
-  margin: 50px 50px 50px 50px;
-  font-family: Roboto, Arial, sans-serif;
-  font-weight: 100;
-  text-align: center;
-  background-color: #478b77;
-  border: 2px solid #478b77;
-  width: 320px;
-  height: 36px;
-  border-radius: 30px;
+/*Nosotros*/
+
+#tituloLosmagio{background-color:black;
+  width: 100%;
+  height: 50px;
+  align-content: center;
+
+}
+.losmagios{ background-color: maroon;
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+
+}
+.perfiles{background-color:red;
+  display: flex;
+  width: 100%;
+  height: 600px;
+
+}
+.persona{
+  background-color: greenyellow;
+  width: 250px;
+  height: 500px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center; 
+  margin-right: 5px;
+  margin-left: 5px;
+
+}
+.cajaimagen{
+  display: inline-block;
+  align-items: center;
+  margin: 10%;
+
+}
+.imagen{
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  border-radius:150px;
+
+}
+.descripcionPersona
+{
+  background-color: rgb(255, 47, 186);
+  flex-wrap: wrap;
+  margin: 10%;
 }
 
-.bgimage {
-  background-image: url('img/background.jpg');
-}
 .navbar {
     font-size: 18px;
     background-image: linear-gradient(260deg, #0c1f15 0%, #000000 100%);
@@ -94,12 +139,13 @@ button{
     padding: 2rem;
     font-size: 2rem;
     align-items:center;
-    background-color: palevioletred;
+    justify-content:center;
     color: white;
   }
   .flexboxfull {
     display: flex;
     width: 100%;
+   
   }
 
   /* Pantalla Respuesta*/
@@ -137,6 +183,43 @@ button{
     width: 50%;
     height: 300px;
     border: 1px solid white;
+   
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    font-size: 15px;
+    padding:10px;
+  }
+  #home{
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+    float: left;
+    border-radius: 5px;
+  }
+  footer{
+    display: inline-block;
+  }
+  .descripcion{
+    font-size: 15px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .iconos i{
+    margin-right: 10px;
+  }
+  .list-inline li{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    list-style: none;
+  }
+  #terminos{
+    color: gray;
+    font-size:13px;
   }
 
   .barraIzq{
