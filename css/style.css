@@ -106,6 +106,10 @@ body {
     font-size: 22px;
     padding: 16px 16px;
   }
+  .logoIzq{
+    margin-left: 100px;
+    margin-right: 30px;
+  }
   
   .navbar-toggle {
     position: absolute;
@@ -143,11 +147,23 @@ body {
     width: 100%;   
   }
 
+  /* Pantalla Respuesta*/
+
+  #CuadroMensaje{
+    width: 50%;
+    height: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: #191919;
+    padding: 30px 50px 43.7px;
+  }
+
+  
   /* Serie  */
 
 #CajaCartelera{
-  background-color: maroon;
-  width: 100%;
+  width: 150%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -263,8 +279,10 @@ body {
   background-color:red;
   margin-right: 5px;
   margin-left: 5px;
-  height: 135px;
-  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 285px;
+  width: 200px;
 }
 .Cartelera:hover{
   -webkit-transform:scale(1.4) ;
