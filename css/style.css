@@ -140,8 +140,7 @@ body {
   }
   .flexboxfull {
     display: flex;
-    width: 100%;
-   
+    width: 100%;   
   }
 
   /* Serie  */
@@ -309,5 +308,33 @@ body {
       transform: rotate(360deg) scale(1.5) ;
       -webkit-transition: all 0.8s ease-in-out;
       transition: all 0.8s ease-in-out;
+    }
+    /* cuando */
+
+    .flexCuando {
+      
+      width: 50%;
+      height: 300px;
+      border: 1px solid white;
+     
+    }
+    .flexboxTransporte {
+      display: flex;
+      width: 100%;
+      height: 180px;  
+           
+    }
+    .tituloTrans{
+      font-size: 15px;
+       padding: 5px;
+       width: 50%;
+    }
+    .transportes{
+    width: 50%;
+    font-size: 15px;
+       padding: 5px;
+    }
+    .iconosTrans{
+      list-style: none;
     }
   }
