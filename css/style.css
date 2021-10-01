@@ -12,6 +12,10 @@ body {
   background-position: unset;
   background-color: var(--blackish4);
   background-attachment: fixed;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 button{
@@ -150,7 +154,6 @@ main {
   flex-wrap: wrap;
   align-items:center;
   justify-content:center;
-  width: 100%;
   padding: 0 5rem;
 }
 
@@ -161,18 +164,12 @@ main {
 
 footer{
   background-color: #191919;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: -40px;
-  position: static;
-  padding-top: 20px;
 }
 
 
 section {
   font-size: 2rem;
-  align-items:center;
-  justify-content:center;
+  align-items:center;  
   color: white;
 }
 
@@ -181,6 +178,90 @@ section {
   height: auto;
   width: 100vw;
   object-fit: cover;
+}
+/* 
+CAJAS GENERAL
+*/ 
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabla
+{
+  
+}
+.caja{
+  flex:1;
+  flex-grow: 1;
+  padding: 2vh;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.centrado{
+  justify-content: center;
+  align-items: center;
+}
+
+.caja + .caja {
+  margin-left: 2%;
+}
+.unacaja {
+  width: 100%;
+}
+.doscajas {
+  width: 48%;
+}
+.trescajas{
+  width: 32%;
+}
+
+.caja_titulo{
+  padding: 4vh;
+  background-color: rgba(32, 32, 32,0.5);
+  text-align: center;
+}
+
+.caja_contenido{
+  padding: 4vh;
+  background-color: rgba(51, 51, 51,0.5);
+}
+
+.caja_contenido_item{
+  line-height: 2;
+}
+
+
+.texto_cablevision_1
+{
+  color: #57dfb7;
+  font-weight: 800;
+}
+
+.texto_caja_titulo
+{
+  font-size: 4.5vmin;
+}
+.texto_caja_subtitulo
+{
+  font-size: 2.5vmin;
+}
+.texto_caja_normal{
+  font-size: 2vmin;
+  color: #dddddd;
+}
+.texto_caja_normal i{
+  margin-left: 20vh;
+}
+.texto_centrado{
+  text-align: center;
+}
+.texto_izquierda{
+  text-align: left;
+}
+.flexboxfull {
+  display: flex;
+  width: 100%;   
 }
 .flexboxfull {
   display: flex;
@@ -214,7 +295,26 @@ section {
 
 
 /* Serie  */
-
+.imagen-cartelera
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.imagen-cartelera:hover{
+  -webkit-transform:scale(1.3) ;
+  transform: scale(1.3) ;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.imagen-cartelera img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  vertical-align: middle;
+  border-style: none;
+}
 #CajaCartelera{
   width: 150%;
   margin-bottom: 300px;

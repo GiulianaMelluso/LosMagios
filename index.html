@@ -21,7 +21,7 @@
   <script src="https://kit.fontawesome.com/6dd2624639.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
 </head>
-<body style="background-image: url(img/background.jpg);">
+<body style="background-image: url(img/background2.jpg);">
   <header>  
     <nav class="navbar">
       <span class="navbar-toggle" id="js-navbar-toggle">
@@ -56,67 +56,86 @@
       </video>
     </section>  
     <!-- texto bienvenida -->
-    <section class="flexboxfull">
-       <h1>¡El invierno esta llegando a la Argentina!</h1>
+    <section id="bienvenida" class="caja">
+      <h1>¡El invierno esta llegando a la Argentina!</h1>
     </section>
-    
-    <section class="flexotro">
-      <h2>Este Miercoles 15 de Diciembre se realizó la Premiere de la octava temporada de Games Of Thrones 
-        en el Av. Eduardo Madero 470 (Luna Park). La serie más vista de estos últimos tiempos 
-        se estrenará a nivel mundial.</h2>
-        <h2>Al evento asistieron gran parte del elenco de GOT como Shopie Turner, Emilie Clarke, Kit Harington,
-          Peter Dinklage, entre otros. Una de las ausente fue Lena Headey que anunció en sus redes de Instagram
-          que estaba enferma.</h2>
-          <h2>Los fanáticos de la serie se encuentran contando los días para ver el comienzo de lo que será el
-            final de la saga de Games Of Thrones</h2>
-          </section>
+    <div class="contenedor">
+      <section id="evento" class="caja">
+        <div class="caja_titulo">
+          <p class="text-white texto_caja_titulo">
+            Una decada de <span class="texto_cablevision_1">Tronos </span>
+          </p>
+          <p class="texto_caja_subtitulo">Cablevision Flow y HBO Max<br>te traen el evento del año!</p>
+        </div>
+        <div class="caja_contenido">
+          <p class="texto_caja_normal texto_izquierda">Para festejar los 10 años de Juego de Tronos, vienen al país los miembros del elenco y del 
+            equipo de la serie mas polemica de los ultimos años, en un mega evento unico auspiciado por Cablevision Flow y HBO Max, con sede en el mitico Luna Park!</p>
+          <br>
+          <div class="centrado">
+            <div class="caja_contenido_item">
+              <p class="texto_caja_normal"><i class="fas fa-microphone-alt fa-lg fa-fw texto_cablevision_1"></i> Entrevistas Exclusivas. </p>
+            </div>
+            <div class="caja_contenido_item">
+              <p class="texto_caja_normal"><i class="fas fa-video-slash fa-lg fa-fw texto_cablevision_1"></i> Escenas Ineditas. </p>
+            <div class="caja_contenido_item">
+              <p class="texto_caja_normal"><i class="fas fa-microphone-alt fa-lg fa-fw texto_cablevision_1"></i> Entrevistas Exclusivas. </p>
+            </div>
+            <div class="contenedor centrado">            
+              <a href="detalles.html"><button type="button">IR A DETALLES DEL EVENTO</button></a> 
+            </div>
+          </div>
+        </div>
+      </section>   
+
+      <section id="serie" class="caja">
+        <div class="caja_titulo">
+          <p class="text-white texto_caja_titulo">
+            Juego de <span class="texto_cablevision_1">Tronos </span>
+          </p>
+          <p class="texto_caja_subtitulo">Los veranos abarcan décadas.<br>Los inviernos pueden durar una vida.</p>
+        </div>
+        <div class="caja_contenido">
           
-          <section class="flexotro">
-            <img id="home"src="img/home.jpg">
-            <h2> Game of Thorne es una serie de televisión de drama y fantasía medieval desarrollada por David Benioff y 
-              D. B. Weiss y producida por la cadena HBO. Su argumento está inspirado en la serie de novelas
-              Canción de hielo y fuego, escrita por el estadounidense George R. R. Martin, y relata las vivencias
-              de un grupo de personajes de distintas casas nobiliarias en el continente ficticio de Poniente para 
-              tener el control del Trono de Hierro y gobernar los siete reinos que conforman el territorio.</h2>
-            </section>
-            
-            <section class="flexboxfull">
-              
-            </section>
-            
+          <p class="texto_caja_normal texto_izquierda">En el continente de Poniente se produjo una guerra civil devastadora que expulsó del trono a los Targaryen y convirtió a Robert Baratheon (Mark Addy) en rey de los Siete Reinos.<br>
+            Tras la muerte de Baratheon, varias familias nobles luchan por el poder del Trono De Hierro del territorio.<br>
+            Viserys (Harry Lloyd), primero, y después su hermana Daenerys (Emilia Clarke), ambos de la casa Targaryen e hijos del rey Aerys II (David Rintoul),
+             reclaman el trono usurpado en medio de un conflicto bélico denominado la Guerra de los Cinco Reyes.<br>
+            Al mismo tiempo, tras el muro de hielo custodiado por la Guardia De La Noche, que separa Poniente de las tierras salvajes del norte, 
+            se cierne un peligro sobrenatural: los caminantes blancos, seres humanoides que amenazan a los Siete Reinos.
+          <div class="centrado">
+            <div class="contenedor centrado">            
+              <a href="detalles.html"><button type="button">VER MAS JUEGO DE TRONOS</button></a> 
+            </div>
+          </div>
+        </div>
+      </section>   
+
+            </div>            
             
             <!-- cartelera -->
             
-            <section class="flexboxfull">
-              <div id="CajaCartelera">
-                
-                <div class="Cartelera">
-                  <img src="img/carteleras/cart1.jpg" height="100%" width="100%">
-                  
+            <section id="OtrosEventos" class="caja">
+              <div class="contenedor centrado" style="width:70%">                
+                <div class="caja imagen-cartelera">
+                  <img src="img/carteleras/cart1.jpg">                  
+                </div>                
+                <div class="caja imagen-cartelera">
+                  <img src="img/carteleras/cart2.jpg">                  
+                </div>                
+                <div class="caja imagen-cartelera">
+                  <img src="img/carteleras/cart3.jpg">                  
                 </div>
-                
-                <div class="Cartelera">
-                  <img src="img/carteleras/cart2.jpg" height="100%" width="100%">
-                  
+                <div class="caja imagen-cartelera">
+                  <img src="img/carteleras/cart4.jpg">                  
                 </div>
-                
-                <div class="Cartelera">
-                  <img src="img/carteleras/cart3.jpg" height="100%" width="100%">
-                  
-                </div>
-                <div class="Cartelera">
-                  <img src="img/carteleras/cart4.jpg" height="100%" width="100%">
-                  
-                </div>
-                <div class="Cartelera">
-                  <img src="img/carteleras/cart5.jpg" height="100%" width="100%">
-                  
-                </div>
-                
+                <div class="caja imagen-cartelera">
+                  <img src="img/carteleras/cart5.jpg">                  
+                </div>                
               </div>
             </section>
             
           </main>
+          <div class="caja"></div>
           <footer>
             <section class="iconos">
               <i class="fab fa-twitter-square"></i>
