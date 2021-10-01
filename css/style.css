@@ -194,6 +194,7 @@ section {
 
 #CajaCartelera{
   width: 150%;
+  margin-bottom: 300px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
