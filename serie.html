@@ -1,40 +1,51 @@
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flow</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="description" content="" />
   <meta name="keywords" content="" />
+  <meta name="description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Flow">
+  <meta name="twitter:site" content="@cablefibertel">
+  <meta name="twitter:description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras.">
+  <meta name="twitter:creator" content="@cablefibertel">
+  <meta name="twitter:image" content="img/favicon-32x32.png">
+  <meta property="og:title" content="Flow">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://web.flow.com.ar">
+  <meta property="og:image" content="img/favicon-32x32.png">
+  <meta property="og:description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras.">
+  <meta property="og:site_name" content="Flow">
   <meta name="author" content="Los Magios" />
   <link rel="stylesheet" href="css/style.css"/>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-  crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6dd2624639.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
 </head>
-<body>
-  <header>  
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle">
+<body style="background-image: url(img/background2.jpg);">
+  <header>
+     <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
         <i class="fas fa-bars"></i>
-      </span>
-      <a href="#" class="logo"><img src="img/logo.svg"></a>
-      <ul class="main-nav" id="js-menu">
-        <li>
-          <a href="index.html" class="nav-links">Home</a>
-        </li>
-        <li>
-          <a href="Pelicula.html" class="nav-links">Pelicula</a>
-        </li>
-        <li>
-          <a href="cuando.html" class="nav-links">Cuando</a>
-        </li>
-        <li>
-          <a href="anotate.html" class="nav-links">Anotate!</a>
-        </li>
-        <li>
-          <a href="nosotros.html" class="nav-links">Nosotros</a>
-        </li>
-      </ul>
-    </nav>
+        </span>
+        <a href="#" class="logo"><img src="img/logo.svg"></a>
+        <ul class="main-nav" id="js-menu">
+           <li>
+              <a href="index.html" class="nav-links">Home</a>
+           </li>
+           <li>
+              <a href="serie.html" class="nav-links">Serie</a>
+           </li>
+           <li>
+              <a href="cuando.html" class="nav-links">Cuando y Donde</a>
+           </li>
+           <li>
+              <a href="anotate.html" class="nav-links">Anotate!</a>
+           </li>
+           <li>
+              <a href="nosotros.html" class="nav-links">Nosotros</a>
+           </li>
+        </ul>
+     </nav>
   </header>
   <!-- comienzo del main -->
   <main>
@@ -102,38 +113,40 @@ titulo
   </main>
 
   <!-- finalizacion del main-->
-  <div class="content">
-  </div>
-    <footer>
-      <section class="iconos">
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram-square"></i>
-        <i class="fas fa-phone-square-alt"></i>
-      <span>0800-199-7724</span>
-      </section>
-      <section class="Descripcion">
-        <div>
-          <ul class="list-inline">
-             <li>PROTECCIÓN DE DATOS PERSONALES |</li>
-             <li>TÉRMINOS Y CONDICIONES</li>
-             <li>DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS INGRESE AQUÍ |</li>
-             <li>CABLEVISIÓN FIBERTEL</li>
-          </ul>
-       </div>
-      <section>
-        <p id="terminos">Los servicios que presta Telecom Argentina S.A. están sujetos a disponibilidad técnica y geográfica dentro del territorio de la República Argentina © 1997 / 2021 Telecom Argentina S.A. Todos los derechos reservados - General Hornos 690 - Ciudad de Bs. As. CUIT 30-63945373-8</p>
-      </section>
-  
-  
-    </footer>
-
-  <script>
+  <footer>
+    <section id="footer_iconos" class="caja">
+       <i class="fab fa-twitter-square"></i>
+       <i class="fab fa-instagram-square"></i>
+       <i class="fas fa-phone-square-alt"></i>
+       <span>0800-199-7724</span>
+    </section>
+    <section id="footer_enlaces">
+    <div>
+       <ul class="list-inline">
+          <li>PROTECCIÓN DE DATOS PERSONALES</li>
+          |
+          <li>TÉRMINOS Y CONDICIONES</li>
+          |
+          <li>DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS INGRESE AQUÍ</li>
+          |
+          <li>CABLEVISIÓN FIBERTEL</li>
+       </ul>
+    </div>
+    <br>
+    <section id="footer_terminos">
+       <p>Los servicios que presta Telecom Argentina S.A. están sujetos a disponibilidad técnica y geográfica dentro del territorio de la República
+          Argentina © 1997 / 2021 Telecom Argentina S.A. Todos los derechos reservados - General Hornos 690 - Ciudad de Bs. As. CUIT 30-63945373-8
+       </p>
+    </section>
+ </footer>
+ <!-- finalizacion del main-->
+ <script>
     let mainNav = document.getElementById("js-menu");
     let navBarToggle = document.getElementById("js-navbar-toggle");
     
     navBarToggle.addEventListener("click", function() {
       mainNav.classList.toggle("active");
     });
-  </script>
+ </script>
 </body>
 </html>
