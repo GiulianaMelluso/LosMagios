@@ -504,35 +504,70 @@ FOOTER FIN
     transition: all 0.8s ease-in-out;
   }
   /* cuando */
-  
-  .flexCuando {
-    
-    width: 50%;
-    height: 300px;
-    border: 1px solid white;
-    
-  }
-  .flexboxTransporte {
+
+  .cuandoContainer{
     display: flex;
-    width: 100%;
-    height: 180px;  
+    flex-wrap: wrap;
+    padding: 10px;
     
+    width: 1200px;
+
+
   }
-  .tituloTrans{
-    font-size: 15px;
-    padding: 5px;
-    width: 50%;
+  .flexboxfulltitulo{
+    
+    width: 1200px;
+    color: #57dfb7;
+    font-size: 50px;
+    padding: 10px;
+    
+
   }
-  .transportes{
-    width: 50%;
-    font-size: 15px;
-    padding: 5px;
-  }
-  .iconosTrans{
+  .flexcuandoizquierda{
+   
+    width: 580px;
+    height: 550px;
+    padding: 20px;
+    margin: 4px;
     list-style: none;
   }
-  
-  footer{
-    padding: 2vh 30vh;
+  .direccion{
+    color: yellow;
   }
+  .dia{
+    color: yellow;
+    margin: 40px;
+  }
+  .mediostransp{
+    color: red;
+    text-align: center;
+  }
+  .flexcuandoderecha{
+    
+    width: 580px;
+    height: 550px;
+    padding: 10px;
+    margin: 4px;
+  }
+  .transporte{
+    vertical-align: middle;
+    justify-content: space-between;
+   margin-top: 20px;
+   list-style: none;
+       
+  } 
+  .texttrans{
+    font-size: 15px;
+    margin-top: 20px
+  } 
+  
+  .iconosTrans{
+    list-style: none;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  
+
+ 
 }
