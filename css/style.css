@@ -41,6 +41,11 @@ a
   text-decoration: none; 
 
 }
+
+.a_blanco
+{
+  color: #fff;
+}
 /*Nosotros*/
 
 #tituloLosmagio{
@@ -233,6 +238,7 @@ CAJAS GENERAL
   justify-content: center;
   align-items: center;
 }
+
 
 .caja + .caja {
   margin-left: 2%;
