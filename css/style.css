@@ -44,17 +44,19 @@ a
 /*Nosotros*/
 
 #tituloLosmagio{
+  font: oblique bold 120% cursive;
+  color: #e3a30b ;
   
-  background-color:black;
+  -webkit-text-stroke: 4px #840404 ;
   width: 100%;
   height: 50px;
   align-content: center;
   
 }
 
-.losmagios{ background-color: maroon;
+.losmagios{
   width: 100%;
-  height: 500px;
+  height: 600px;
   
   display: flex;
   align-items: center;
@@ -63,16 +65,20 @@ a
   justify-content:center;
   
 }
-.perfiles{background-color:red;
+.perfiles{
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 600px;
   
 }
 .persona{
-  background-color: greenyellow;
+  
+  border: solid;  
+  border-radius: 2em;
+  border-color:red;
   width: 250px;
-  height: 500px;
+  height: 600px;
   display: inline-block;
   align-items: center;
   justify-content: center; 
@@ -93,9 +99,35 @@ a
   border-radius:150px;
   
 }
-.descripcionPersona
+
+
+.acercanosotros{
+  
+  height: 500px;
+  width: 1000px;
+  text-align: center; 
+  color: #e3a30b;
+  -webkit-text-stroke: 1px #840404 ;
+  background-image: url('../img/los_magios_logo.png');
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-position-y:center;  
+  background-size: 400px;   
+}
+
+
+#parrafoacerca
 {
-  background-color: rgb(255, 47, 186);
+  margin-top: 5%;
+  text-align: center; 
+  color: #e3a30b;
+  -webkit-text-stroke: 1px #ac0505 ;
+  
+}
+.descripcionPersona
+{  
+  text-align: center; 
+  color: #e3a30b;
   flex-wrap: wrap;
   margin: 10%;
 }
@@ -188,10 +220,7 @@ CAJAS GENERAL
   display: flex;
   flex-wrap: wrap;
 }
-.tabla
-{
-  
-}
+
 .caja{
   flex:1;
   flex-grow: 1;
