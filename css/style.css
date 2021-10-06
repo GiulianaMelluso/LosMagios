@@ -35,6 +35,12 @@ button:hover
   border: 2px solid #2fc191;  
 }
 
+a
+{
+  color: #57dfb7;
+  text-decoration: none; 
+
+}
 /*Nosotros*/
 
 #tituloLosmagio{
@@ -226,6 +232,15 @@ CAJAS GENERAL
 .caja_contenido_item{
   line-height: 2;
 }
+.caja_mensaje{
+  width: 50vw;
+  min-height: 10vh;
+  background-color: rgba(51, 51, 51,0.5);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 30px 50px 50px;
+}
 .romper {
   flex-basis: 100%;
   height: 0;
@@ -240,6 +255,11 @@ TEXTOS GENERAL
 .texto_cablevision_1
 {
   color: #57dfb7;
+  font-weight: 800;
+}
+.texto_cablevision_2
+{
+  color: #df7057;
   font-weight: 800;
 }
 
