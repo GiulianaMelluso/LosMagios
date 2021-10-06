@@ -67,9 +67,12 @@ button:hover
   
 }
 .persona{
-  background-color: greenyellow;
+  
+  border: solid;  
+  border-radius: 2em;
+  border-color:red;
   width: 250px;
-  height: 500px;
+  height: 600px;
   display: inline-block;
   align-items: center;
   justify-content: center; 
@@ -115,6 +118,8 @@ button:hover
 }
 .descripcionPersona
 {  
+  text-align: center; 
+  color: #e3a30b;
   flex-wrap: wrap;
   margin: 10%;
 }
