@@ -523,13 +523,14 @@ FOOTER FIN
     
 
   }
-  .flexcuandoizquierda{
+  
+  .flexcuandoizquierda,.flexcuandoderecha{
    
     width: 580px;
     height: 550px;
     padding: 20px;
     margin: 4px;
-    list-style: none;
+       
   }
   .direccion{
     color: yellow;
@@ -542,18 +543,13 @@ FOOTER FIN
     color: red;
     text-align: center;
   }
-  .flexcuandoderecha{
-    
-    width: 580px;
-    height: 550px;
-    padding: 10px;
-    margin: 4px;
-  }
+  
   .transporte{
     vertical-align: middle;
     justify-content: space-between;
    margin-top: 20px;
    list-style: none;
+ 
        
   } 
   .texttrans{
@@ -563,8 +559,7 @@ FOOTER FIN
   
   .iconosTrans{
     list-style: none;
-    margin-left: 80px;
-    margin-right: 80px;
+    padding: 40px;    
   }
   
   
