@@ -94,6 +94,7 @@ button:hover
   
 }
 
+
 .acercanosotros{
   
   height: 500px;
@@ -104,17 +105,18 @@ button:hover
   background-image: url('../img/los_magios_logo.png');
   background-repeat:no-repeat;
   background-position-x:center;
-  background-position-y:center;
-  opacity:0.7;
-  filter:alpha (opacity(40)); 
-  background-size: 400px;
+  background-position-y:center;  
+  background-size: 400px;   
 }
+
+
 #parrafoacerca
 {
   margin-top: 5%;
   text-align: center; 
   color: #e3a30b;
   -webkit-text-stroke: 1px #ac0505 ;
+  
 }
 .descripcionPersona
 {  
