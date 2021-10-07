@@ -240,10 +240,27 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#trailer{
-  width: 100%;
-  height: 720px;
+
+.trailer {
+  overflow: hidden;
+  position: relative;
+  width:100%;
 }
+
+.trailer::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.trailer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 h1{
   text-align: center;
 }
