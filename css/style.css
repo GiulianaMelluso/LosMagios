@@ -419,7 +419,7 @@ footer{
   .navbar-toggle {
     display: none;
   }
-  .logo:hover {
+  .logo:hover, .logoIzq img:hover {
     -webkit-transform: rotate(360deg) scale(1.5) ;
     transform: rotate(360deg) scale(1.5) ;
     -webkit-transition: all 0.8s ease-in-out;
