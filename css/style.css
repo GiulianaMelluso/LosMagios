@@ -48,6 +48,10 @@ a
 }
 /*Nosotros*/
 
+.logo{
+
+}
+
 #tituloLosmagio{
   
   color: #57dfb7;
@@ -119,6 +123,10 @@ a
   color: #57dfb7;
   -webkit-text-stroke: 1px #272525;
   background-image: url('../img/los_magios_logo.png');
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  border: #fff;
+  border-radius: 100%;
   background-repeat:no-repeat;
   background-position-x:center;
   background-position-y:center;  
