@@ -19,7 +19,6 @@ body {
 }
 
 button{
-  margin: 50px 50px 50px 50px;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 100;
   text-align: center;
@@ -33,6 +32,11 @@ button:hover
 {
   background-color: #2fc191;
   border: 2px solid #2fc191;  
+}
+
+.margin50
+{
+  margin:50px;
 }
 
 a
@@ -526,7 +530,72 @@ FOOTER FIN
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+/*
+ANOTATE
+*/
+.formularioAnotate_caja{
+  width: 350px;
+  min-height: 367px;
+  padding: 0 20px 43.7px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.formularioAnotate h1 {
+  font-size: 3vh;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 1.5vh;
+}
+.formularioAnotate {
+	padding-top: 0.8em;
+}
 
+.formularioAnotate p {
+	position: relative;
+}
+.formularioAnotate input,
+.formularioAnotate label {
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	font-size: 2vh;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.formularioAnotate input {
+	padding: .5em .5em .5em 4em;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #686868;
+	box-sizing: border-box;
+  transition: box-shadow 150ms ease-out;
+  background: none;
+	color: #fff;
+}
+.formularioAnotate label {
+	position: absolute;
+	top: .7em;
+	left: .5em;
+	color: #686868;
+	line-height: 1;
+}
+.formularioAnotate input:focus {
+	padding-left: .5em;
+  color:#fff;
+  transition: box-shadow 150ms ease-out;
+  box-shadow: 0 2px 0 0 #57dfb7;
+}
+.formularioAnotate input:focus + label {
+	padding-left: .5em;
+	top: -1.4em;
+  color: #57dfb7;
+  font-size: 1.5vh;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -622,7 +691,13 @@ FOOTER FIN
     padding: 40px;    
   }
   
-  
+.formularioAnotate_caja{
+  width: 420px;
+  min-height: 420px;
+  padding: 26.6px 50px 43.7px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
  
 }

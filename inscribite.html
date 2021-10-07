@@ -1,0 +1,149 @@
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flow</title>
+   <meta name="keywords" content="" />
+   <meta name="description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras.">
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:title" content="Flow">
+   <meta name="twitter:site" content="@cablefibertel">
+   <meta name="twitter:description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras.">
+   <meta name="twitter:creator" content="@cablefibertel">
+   <meta name="twitter:image" content="img/favicon-32x32.png">
+   <meta property="og:title" content="Flow">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://web.flow.com.ar">
+   <meta property="og:image" content="img/favicon-32x32.png">
+   <meta property="og:description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras.">
+   <meta property="og:site_name" content="Flow">
+   <meta name="author" content="Los Magios" />
+   <link rel="stylesheet" href="css/style.css"/>
+   <script src="https://kit.fontawesome.com/6dd2624639.js" crossorigin="anonymous"></script>
+   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
+</head>
+<body style="background-image: url(img/background.jpg);">
+   <!-- comienzo del header -->
+   <header>
+      <nav class="navbar">
+         <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+         </span>
+         <a href="index.html" class="logo"><img src="img/logo.svg"></a>
+         <ul class="main-nav" id="js-menu">
+            <li>
+               <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+               <a href="serie.html" class="nav-links">Serie</a>
+            </li>
+            <li>
+               <a href="cuando.html" class="nav-links">Cuando y Donde</a>
+            </li>
+            <li>
+               <a href="anotate.html" class="nav-links">Inscribite!</a>
+            </li>
+            <li>
+               <a href="nosotros.html" class="nav-links">Nosotros</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   
+   <!-- comienzo del main -->
+   <main>      
+      <section id="inscripcion" class="caja">
+         <div class="caja_contenido formularioAnotate formularioAnotate_caja">
+            <h1>Inscribite!</h1>
+            <form class="form" id="Anotate" novalidate>
+               <div class="formularioAnotate">
+                  <p>
+                     <input type="text" id="nombre" name="nombre" required pattern="[a-zA-Z]+"/>
+                     <label for="nombre">Nombre</label>
+                  </p>
+               </div>
+               <div class="formularioAnotate">
+                  <p>
+                     <input type="text" id="apellido" name="apellido" required pattern="[a-zA-Z]+"/>
+                     <label for="apellido">Apellido</label>
+                  </p>
+               </div>
+               <div class="formularioAnotate">
+                  <p>
+                     <input type="number" id="edad" name="edad" required min="18" max="99" pattern="[0-9]+"/>
+                     <label for="edad">Edad</label>
+                  </p>
+               </div>
+               <div class="formularioAnotate">
+                  <p>
+                     <input type="email" id="email" name="email" required/>
+                     <label for="email">Email</label>
+                  </p>
+               </div>
+               <div class="formularioAnotate">
+                  <p>
+                     <input type="text" id="codigo" name ="codigo" required minlength="4"pattern="[A-Za-z0-9]+"/>
+                     <label for="codigo">Código</label>
+                  </p>
+               </div>
+               <br/>
+               <button>ENVIAR INSCRIPCION</button>
+            </form>
+         </div>
+      </section>
+   </main>
+   <!-- finalizacion del main-->
+   <div class="caja"></div>
+   <!-- comienzo del footer-->
+   <footer>
+      <section id="footer_iconos" class="caja">
+         <a href="https://twitter.com/flowcontenidos"><i class="fab fa-twitter-square a_blanco"></i></a>
+         <a href="https://www.instagram.com/flowcontenidos"><i class="fab fa-instagram-square a_blanco"></i></a>
+         <a href="https://conectividad.personal.com.ar/contacto/"><i class="fas fa-phone-square-alt a_blanco"></i></a>
+         <span>0800-199-7724</span>
+      </section>
+      <section id="footer_enlaces">
+         <div>
+            <ul class="list-inline">
+               <li>PROTECCIÓN DE DATOS PERSONALES</li>
+               |
+               <li>TÉRMINOS Y CONDICIONES</li>
+               |
+               <li>DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS INGRESE AQUÍ</li>
+               |
+               <li>CABLEVISIÓN FIBERTEL</li>
+            </ul>
+         </div>
+         <br>
+      </section>      
+      <section id="footer_terminos">
+         <p>Los servicios que presta Telecom Argentina S.A. están sujetos a disponibilidad técnica y geográfica dentro del territorio de la República
+            Argentina © 1997 / 2021 Telecom Argentina S.A. Todos los derechos reservados - General Hornos 690 - Ciudad de Bs. As. CUIT 30-63945373-8
+         </p>
+      </section>
+   </footer>
+   <!-- finalizacion del footer-->
+   <script>
+      let mainNav = document.getElementById("js-menu");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+      
+      navBarToggle.addEventListener("click", function() {
+         mainNav.classList.toggle("active");
+      });
+      
+      const element = document.getElementById('Anotate');
+      element.addEventListener('submit', event => {
+         const codigos = ['1111', '2222', '3333'];
+         const codigoIngresado = document.getElementById("codigo").value;         
+         if (codigos.includes(codigoIngresado)) {
+            window.location.href = 'exito.html';
+            event.preventDefault();
+         }
+         else
+         {    
+            window.location.href = 'error.html';            
+            event.preventDefault();
+         }
+      });
+   </script>
+</body>
+</html>
