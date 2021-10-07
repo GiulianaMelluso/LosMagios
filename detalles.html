@@ -23,6 +23,11 @@
         <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     </head>
     <body style="background-image: url(img/background2.jpg);">
+        <!-- comienzo del preloading -->
+        <div class="preload">
+            <img src="img/preloader.gif">
+        </div>
+        <!-- fin del preloading -->
         <!-- comienzo del header -->
         <header>
             <nav class="navbar">
@@ -121,6 +126,10 @@
             navBarToggle.addEventListener("click", function () {
                 mainNav.classList.toggle("active");
             });
+            
+            window.onload = function(){
+                document.querySelector(".preload").style.display = "none";
+            }
         </script>
     </body>
 </html>

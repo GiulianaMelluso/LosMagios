@@ -1,3 +1,4 @@
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <title>Inscripción Inválida - Una década de Tronos - Los Magios & Flow</title>
@@ -11,6 +12,11 @@
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
 </head>
 <body style="background-image: url(img/background.jpg);">
+    <!-- comienzo del preloading -->
+    <div class="preload">
+        <img src="img/preloader.gif">
+    </div>
+    <!-- fin del preloading -->
     <header>  
         <a href="index.html" class="logoIzq"><img src="img/logo.svg" height="240px" width="140px"></a>
     </header>
@@ -36,8 +42,20 @@
 <script>
     document.getElementById('ir-atras').addEventListener('click', () => {
         history.back();
-    });    
+    });
+    
+    window.onload = function(){
+        document.querySelector(".preload").style.display = "none";
+    }
 </script>
+
+<noscript>
+    <style>
+        .preload {
+            display: none !important;
+        }
+    </style>
+</noscript>
 
 </body>
 </html>

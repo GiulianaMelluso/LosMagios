@@ -1,3 +1,4 @@
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <title>Inscripción Exitosa - Una década de Tronos - Los Magios & Flow</title>
@@ -7,29 +8,48 @@
     <meta name="author" content="Los Magios" />
     <link rel="stylesheet" href="css/style.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
 </head>
 <body style="background-image: url(img/background.jpg);">
-<header>  
+    <!-- comienzo del preloading -->
+    <div class="preload">
+        <img src="img/preloader.gif">
+    </div>
+    <!-- fin del preloading -->
+    <header>  
         <a href="index.html" class="logoIzq"><img src="img/logo.svg" height="240px" width="140px"></a>
-</header>
-
-<div class="centrado">
-    <section id="mensaje" class="caja_mensaje">
-        
-        
-    <p>INSCRIPCIÓN <span class="texto_cablevision_1">EXITOSA</span>!</p>
-    <br>
-    <i class="far fa-check-circle" style="font-size: 100px;"></i>
+    </header>
+    
+    <div class="centrado">
+        <section id="mensaje" class="caja_mensaje">
+            
+            
+            <p>INSCRIPCIÓN <span class="texto_cablevision_1">EXITOSA</span>!</p>
+            <br>
+            <i class="far fa-check-circle" style="font-size: 100px;"></i>
             <br>
             <br>
             <p class="texto_caja_normal">La inscripción se realizó exitosamente. Ya estas registrado para presenciar el evento.</p>
         </span>
         <a href="index.html"><button type="button" class="margin50">VOLVER AL INICIO</button></a> 
-
-    
+        
+        
     </section>
 </div>
+
+<script>
+    window.onload = function(){
+        document.querySelector(".preload").style.display = "none";
+    }
+</script>
+
+<noscript>
+    <style>
+        .preload {
+            display: none !important;
+        }
+    </style>
+</noscript>
 </body>
 </html>

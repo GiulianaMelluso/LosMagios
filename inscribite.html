@@ -1,55 +1,60 @@
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inscribite! - Una década de Tronos - Los Magios & Flow</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras." />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Flow" />
-        <meta name="twitter:site" content="@cablefibertel" />
-        <meta name="twitter:description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras." />
-        <meta name="twitter:creator" content="@cablefibertel" />
-        <meta name="twitter:image" content="img/favicon-32x32.png" />
-        <meta property="og:title" content="Flow" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://web.flow.com.ar" />
-        <meta property="og:image" content="img/favicon-32x32.png" />
-        <meta property="og:description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras." />
-        <meta property="og:site_name" content="Flow" />
-        <meta name="author" content="Los Magios" />
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="https://kit.fontawesome.com/6dd2624639.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    </head>
-    <body style="background-image: url(img/background2.jpg);">
-        <!-- comienzo del header -->
-        <header>
-            <nav class="navbar">
-                <span class="navbar-toggle" id="js-navbar-toggle">
-                    <i class="fas fa-bars"></i>
-                </span>
-                <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
-                <ul class="main-nav" id="js-menu">
-                    <li>
-                        <a href="index.html" class="nav-links">Home</a>
-                    </li>
-                    <li>
-                        <a href="serie.html" class="nav-links">Serie</a>
-                    </li>
-                    <li>
-                        <a href="detalles.html" class="nav-links">Detalles del Evento</a>
-                    </li>
-                    <li>
-                        <a href="inscribite.html" class="nav-links">Inscribite!</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html" class="nav-links">Nosotros</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- fin del header -->
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Inscribite! - Una década de Tronos - Los Magios & Flow</title>
+   <meta name="keywords" content="" />
+   <meta name="description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras." />
+   <meta name="twitter:card" content="summary" />
+   <meta name="twitter:title" content="Flow" />
+   <meta name="twitter:site" content="@cablefibertel" />
+   <meta name="twitter:description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras." />
+   <meta name="twitter:creator" content="@cablefibertel" />
+   <meta name="twitter:image" content="img/favicon-32x32.png" />
+   <meta property="og:title" content="Flow" />
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="https://web.flow.com.ar" />
+   <meta property="og:image" content="img/favicon-32x32.png" />
+   <meta property="og:description" content="Podes disfrutar de la TV en vivo, series, películas y mucho más desde cualquier dispositivo cuándo y dónde quieras." />
+   <meta property="og:site_name" content="Flow" />
+   <meta name="author" content="Los Magios" />
+   <link rel="stylesheet" href="css/style.css" />
+   <script src="https://kit.fontawesome.com/6dd2624639.js" crossorigin="anonymous"></script>
+   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+</head>
+<body style="background-image: url(img/background2.jpg);">
+   <!-- comienzo del preloading -->
+   <div class="preload">
+       <img src="img/preloader.gif">
+   </div>
+   <!-- fin del preloading -->
+   <!-- comienzo del header -->
+   <header>
+      <nav class="navbar">
+         <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+         </span>
+         <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+         <ul class="main-nav" id="js-menu">
+            <li>
+               <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+               <a href="serie.html" class="nav-links">Serie</a>
+            </li>
+            <li>
+               <a href="detalles.html" class="nav-links">Detalles del Evento</a>
+            </li>
+            <li>
+               <a href="inscribite.html" class="nav-links">Inscribite!</a>
+            </li>
+            <li>
+               <a href="nosotros.html" class="nav-links">Nosotros</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <!-- fin del header -->
    <!-- comienzo del main -->
    <main>      
       <section id="inscripcion" class="caja">
@@ -145,6 +150,18 @@
             event.preventDefault();
          }
       });
+      
+      window.onload = function(){
+         document.querySelector(".preload").style.display = "none";
+      }
    </script>
+   
+   <noscript>
+      <style>
+         .preload {
+            display: none !important;
+         }
+      </style>
+   </noscript>
 </body>
 </html>
