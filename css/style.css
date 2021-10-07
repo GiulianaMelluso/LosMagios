@@ -365,6 +365,12 @@ TEXTOS FIN
   height: 25vh;
 
 }
+.imagen-index{
+  width: 100%;
+  min-height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .imagen-cartelera
 {
   display: flex;
