@@ -22,7 +22,12 @@
         <script src="https://kit.fontawesome.com/6dd2624639.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     </head>
-    <body style="background-image: url(img/background2.jpg);">
+    <body style="background-image: url(img/background_magios.jpg);">
+        <!-- comienzo del preloading -->
+        <div class="preload">
+	        <img src="img/preloader.gif">
+        </div>
+        <!-- fin del preloading -->
         <!-- comienzo del header -->
         <header>
             <nav class="navbar">
@@ -82,7 +87,7 @@
             <section class="perfiles">
                 <div class="persona">
                     <div class="cajaimagen">
-                        <img class="imagen" src="Img/Homeroperfil.png" />
+                        <img class="imagen" src="img/perfil/gm.png" />
                     </div>
                     <div class="descripcionPersona">
                         <p class="texto_caja_titulo">
@@ -97,7 +102,7 @@
                 </div>
                 <div class="persona">
                     <div class="cajaimagen">
-                        <img class="imagen" src="Img/Simorperfil.png" />
+                        <img class="imagen" src="img/perfil/lg.png" />
                     </div>
                     <div class="descripcionPersona">
                         <p class="texto_caja_titulo">
@@ -112,7 +117,7 @@
                 </div>
                 <div class="persona">
                     <div class="cajaimagen">
-                        <img class="imagen" src="Img/Lennyperfil.png" />
+                        <img class="imagen" src="img/perfil/ec.png" />
                     </div>
                     <div class="descripcionPersona">
                         <p class="texto_caja_titulo">
@@ -127,7 +132,7 @@
                 </div>
                 <div class="persona">
                     <div class="cajaimagen">
-                        <img class="imagen" src="Img/Krustyperfil.png" />
+                        <img class="imagen" src="img/perfil/ip.png" />
                     </div>
                     <div class="descripcionPersona">
                         <p class="texto_caja_titulo">
@@ -181,6 +186,10 @@
             navBarToggle.addEventListener("click", function () {
                 mainNav.classList.toggle("active");
             });
+            
+            window.onload = function(){
+                document.querySelector(".preload").style.display = "none";
+            }
         </script>
     </body>
 </html>
