@@ -1,46 +1,42 @@
 <head>
     <meta charset="UTF-8" />
-    <title>Flow</title>
+    <title>Inscripción Inválida - Una década de Tronos - Los Magios & Flow</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Los Magios" />
     <link rel="stylesheet" href="css/style.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-        crossorigin="anonymous"></script>
-        
+    crossorigin="anonymous"></script>    
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
 </head>
 <body style="background-image: url(img/background.jpg);">
-<header>  
-        <a href="#" class="logoIzq"><img src="img/logo.svg" height="240px" width="140px"></a>
-</header>
-
-<div class="centrado">
-    <section id="mensaje" class="caja_mensaje">
-        
-        
-    <p>Inscripcion <span class="texto_cablevision_2">fallida</span>!</p>
-    <br>
-           
+    <header>  
+        <a href="index.html" class="logoIzq"><img src="img/logo.svg" height="240px" width="140px"></a>
+    </header>
+    
+    <div class="centrado">
+        <section id="mensaje" class="caja_mensaje">
+            
+            
+            <p>INSCRIPCIÓN <span class="texto_cablevision_2">INVÁLIDA</span>!</p>
+            <br>
+            
             <i class="fas fa-exclamation-triangle" style="font-size: 100px;"></i>
             <br>
             <br>
-            <p class="texto_caja_normal">Hubo un error al intentar registrarte, por favor intentalo de nuevo.</p>
+            <p class="texto_caja_normal">Hubo un error con el código de inscripción ingresado, por favor inténtalo nuevamente.</p>
         </span>
-        <a href="index.html"><button type="button">VOLVER AL INICIO</button></a> 
-
-    
+        <button type="button" id="ir-atras" class="margin50">VOLVER ATRÁS</button>
+        
+        
     </section>
 </div>
-      
-<script>
-    let mainNav = document.getElementById("js-menu");
-let navBarToggle = document.getElementById("js-navbar-toggle");
 
-navBarToggle.addEventListener("click", function() {
-  mainNav.classList.toggle("active");
-});
+<script>
+    document.getElementById('ir-atras').addEventListener('click', () => {
+        history.back();
+    });    
 </script>
 
 </body>
