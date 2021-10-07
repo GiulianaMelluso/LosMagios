@@ -95,35 +95,6 @@ a
   border-radius:150px;
   
 }
-
-
-.acercanosotros{
-  
-  height: 500px;
-  width: 1000px;
-  text-align: center; 
-  color: #57dfb7;
-  -webkit-text-stroke: 1px #272525;
-  background-image: url('../img/los_magios_logo.png');
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  border: #fff;
-  border-radius: 100%;
-  background-repeat:no-repeat;
-  background-position-x:center;
-  background-position-y:center;  
-  background-size: 400px;   
-}
-
-
-#parrafoacerca
-{
-  margin-top: 5%;
-  text-align: center; 
-  color: #57dfb7;
-  -webkit-text-stroke: 1px #272525;
-  
-}
 .descripcionPersona
 {  
   text-align: center; 
@@ -355,13 +326,6 @@ h3{
   font-weight: normal;
   padding:10px;
 }
-#home{
-  width: 200px;
-  height: 250px;
-  margin: 5px;
-  float: left;
-  border-radius: 5px;
-}
 
 /* 
 FOOTER
@@ -400,57 +364,29 @@ footer{
 FOOTER FIN
 */ 
 
-.barraIzq{
-  display: flex;
-  flex-wrap: wrap;
-  align-items:left;
-  justify-content:center;
-  
-  width: 30%;
-  height: 500px;
-  border: 1px solid white;
-  
+/*
+PRELOADER
+*/
+.preload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+	background-color: #181818;
 }
-.barraDer{
-  display: flex;
-  flex-wrap: wrap;
-  align-items:right;
-  justify-content:center;
-  
-  width: 70%;
-  height: 500px;
-  border: 1px solid white;
-  
+.preload img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
 }
-#DerImagen {
-  height: 100%;;
-  width: 50%;;
-  background-color: yellow;
-}
-#DerDescripcion{
-  height: 100%;
-  width: 50%;;
-  background-color: blue;
-}
+/*
+FIN PRELOADER
+*/
 
-#IzqTitulo{
-  height: 10%;
-  width: 100%;
-  background-color: cyan;
-  
-}
-#IzqDescripcion{
-  height: 55%;
-  width: 100%;
-  background-color: pink;
-  
-}
-#IzqImagen{
-  height: 35%;
-  width: 100%;;
-  background-color: brown;
-  
-}
 #CajaCartelera{
   width: 100%;
   margin: 2vh;
@@ -579,12 +515,6 @@ ANOTATE
     transform: rotate(360deg) scale(1.5) ;
     -webkit-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
-  }
-
-  
-  .iconosTrans{
-    list-style: none;
-    padding: 40px;    
   }
   
 .formularioAnotate_caja{
